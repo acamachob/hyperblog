@@ -42,14 +42,14 @@ _-_¿Qué es git init?: git init es el comando que activa git en nuestro proyect
 
 **Ciclo básico de un trabajo en Git**
 *-*Cómo funciona el staging y el repositorio: ciclo básico de trabajo en git: El flujo de trabajo básico en git es algo así:
-*-*Modificas una serie de archivos en tu directorio de trabajo.
-*-*Preparas los archivos, añadiéndolos a tu área de preparación (staging).
-*-*Confirmas los cambios (commit), lo que toma los archivos tal y como están en el área de preparación y almacena esa copia instantánea de manera permanente en tu directorio de git.
+    *-*Modificas una serie de archivos en tu directorio de trabajo.
+    *-*Preparas los archivos, añadiéndolos a tu área de preparación (staging).
+    *-*Confirmas los cambios (commit), lo que toma los archivos tal y como están en el área de preparación y almacena esa copia instantánea de manera permanente en tu directorio de git.
 
 *-*Veamos a detalle las 3 secciones principales que tiene un proyecto en git.
-*-*Working directory: El working directory es una copia de una versión del proyecto. Estos archivos se sacan de la base de datos comprimida en el directorio de git y se colocan en el disco para que los puedas usar o modificar.
-*-*Staging area: Es un área que almacena información acerca de lo que va a ir en tu próxima confirmación. A veces se le denomina índice (index).
-_-_.git directory (repository): En el repository se almacenan los metadatos y la base de datos de los objetos para tu proyecto. Es la parte más importante de git (carpeta .git) y es lo que se copia cuando clonas un repositorio desde otra computadora.
+    *-*Working directory: El working directory es una copia de una versión del proyecto. Estos archivos se sacan de la base de datos comprimida en el directorio de git y se colocan en el disco para que los puedas usar o modificar.
+    *-*Staging area: Es un área que almacena información acerca de lo que va a ir en tu próxima confirmación. A veces se le denomina índice (index).
+    *-*.git directory (repository): En el repository se almacenan los metadatos y la base de datos de los objetos para tu proyecto. Es la parte más importante de git (carpeta .git) y es lo que se copia cuando clonas un repositorio desde otra computadora.
 
 **Ciclo de vida o estados de los archivos en git**
 *-*Cuando trabajamos con git, nuestros archivos pueden vivir y moverse entre 4 diferentes estados (cuando trabajamos con repositorios remotos pueden ser más estados, pero lo estudiaremos más adelante):
@@ -57,7 +57,6 @@ _-_.git directory (repository): En el repository se almacenan los metadatos y la
 *-*Archivos staged: Son archivos en staging. Viven dentro de git y hay registro de ellos porque han sido afectados por el comando git add, aunque no sus últimos cambios. Git ya sabe de la existencia de estos últimos cambios, pero todavía no han sido guardados definitivamente en el repositorio porque falta ejecutar el comando git commit.
 *-*Archivos unstaged: Entiéndelos como archivos “tracked pero unstaged”. Son archivos que viven dentro de git pero no han sido afectados por el comando git add ni mucho menos por git commit. Git tiene un registro de estos archivos, pero está desactualizado, sus últimas versiones solo están guardadas en el disco duro.
 *-*Archivos untracked: Son archivos que NO viven dentro de git, solo en el disco duro. Nunca han sido afectados por git add, así que git no tiene registros de su existencia.
-
 *-*Recuerda que hay un caso muy raro donde los archivos tienen dos estados al mismo tiempo: staged y untracked. Esto pasa cuando guardas los cambios de un archivo en el área de staging (con el comando git add), pero antes de hacer commit para guardar los cambios en el repositorio haces nuevos cambios que todavía no han sido guardados en el área de staging.
 
 **Comandos para mover archivos entre los estados de Git**
@@ -69,3 +68,23 @@ _-_.git directory (repository): En el repository se almacenan los metadatos y la
 *-*Git rm: Este comando necesita alguno de los siguientes argumentos para poder ejecutarse correctamente:
 *-*git rm --cached: mueve los archivos que le indiquemos al estado untracked.
 *-*git rm --force: elimina los archivos de git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
+
+**AL trabajar con otras personas y actualizar el repositorio remoto**
+*-*Git clone:
+    *-*Se usa en vez de git init. 
+    *-*Trae los archivos al repositorio remoto a través de la url del repositorio. 
+    *-*Se trae una copia del master al directorio local de trabajo y crea la base de datos de los cambios históricos al repositorio local, es decir, que al clonarlo, deja los cambios en Staging.
+*-*Seguimos haciendo git add y git init para agregar los cambios al repositorio local.
+ *-*Pero cuando se quieren enviar al servidor, se realiza _git push_.
+*-*Se usa _git fetch_ para traer una actualización que alguien le hizo al repositorio y lo deja de manera local.
+*-*Para unir esta actualización que alguien subió al servidor con la mia, se utiliza _git merge_
+*-*Comando _git pull_ fusiona los conceptos de fetch y merge. De esa manera, tengo una copia actualizada de lo que pase en el repositorio.
+
+**Ramas**
+*-*Master es la rama principal y la que tiene toda la historia de commits.
+*-*Commit más reciente es el HEAD.
+*-*Crear una rama, básicamente es crear una copia del último commit. Estos cambios no lo va a ver la rama master, hasta que no se fusione.
+*-*_git commit -am_ Funciona para añadir y hacer los cambios de una sola vez a los archivos. Solo para archivos a los que ya se le han hecho modificaciones add .
+
+
+
