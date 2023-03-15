@@ -20,8 +20,12 @@
 *-*code: Para abrir VSC.
 *-*git status: Estado del proyecto en el momento.
 *-*git add: Añadir el archivo a la carpeta Git (Base de datos), para poder empezar a generar cambios.
-*-*l
+*-*git rm --cached: Retirar el archivo de la base de datos. No funciona solo con git rm. No lo borra de la carpeta, solo de la base de datos de Git.
 *-*git commit: Comando que envía los cambios al repositorio.
+*-*git config: Para mostrar las configuraciones de git.
+*-*Cuando hay un solo - se utiliza con letras, ej, ls -at. 
+*-*Cuando son -- se utiliza con palabras, ej --global.
+*-* git config --global: Configurar los usuarios.
 
 **Crear un repositorio**
 *-*Ubicarse en la carpeta principal de los archivos y escribir git init + enter.
