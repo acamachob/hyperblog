@@ -32,3 +32,5 @@
 **Crear un repositorio**
 *-*Ubicarse en la carpeta principal de los archivos y escribir git init + enter.
 *-*La carpeta está oculta, pero aparece un archivo .git, que es donde se van a generar los cambios.
+
+**Estado de un archivo**
