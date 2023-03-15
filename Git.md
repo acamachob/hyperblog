@@ -26,6 +26,8 @@
 *-*Cuando hay un solo - se utiliza con letras, ej, ls -at. 
 *-*Cuando son -- se utiliza con palabras, ej --global.
 *-* git config --global: Configurar los usuarios.
+*-*git log + nombre del archivo: Visualizar los cambios que se han generado.
+*-*git_show + nombre del archivo: Ver los cambios que se han realizado.
 
 **Crear un repositorio**
 *-*Ubicarse en la carpeta principal de los archivos y escribir git init + enter.
