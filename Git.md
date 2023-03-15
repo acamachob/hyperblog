@@ -85,6 +85,10 @@ _-_¿Qué es git init?: git init es el comando que activa git en nuestro proyect
 *-*Commit más reciente es el HEAD.
 *-*Crear una rama, básicamente es crear una copia del último commit. Estos cambios no lo va a ver la rama master, hasta que no se fusione.
 *-*_git commit -am_ Funciona para añadir y hacer los cambios de una sola vez a los archivos. Solo para archivos a los que ya se le han hecho modificaciones add .
+*-*_git log --stat_ Muestra la cantidad de cambios realizados.
+*-*_git branch_ Crea una nueva rama.
+*-*_git checkout + nombre rama_ Para entrar a la rama o devolverme a la rama.
+*-*_git merge_ Este comando siempre va a ocurrir en la rama en la que está, entonces por ejemplo, si quiero que quede en master, debo arrancar el comando merge allí.
 
 
 
