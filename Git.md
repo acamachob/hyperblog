@@ -61,21 +61,10 @@
 
 **Comandos para mover archivos entre los estados de Git**
 *-*Estos son los comandos más importantes que debes conocer:
-
-*-*Git status: git status nos permite ver el estado de todos nuestros archivos y carpetas.
-
-
-Git add
-git add nos ayuda a mover archivos del untracked o unstaged al estado staged. Podemos usar git nombre-del-archivo-o-carpeta para añadir archivos y carpetas individuales o git add -A para mover todos los archivos de nuestro proyecto (tanto untrackeds como unstageds).
-
-Git reset HEAD
-Nos ayuda a sacar archivos del estado staged para devolverlos a su estado anterior. Si los archivos venían de unstaged, vuelven allí. Y lo mismo se venían de untracked.
-
-Git commit
-Nos ayuda a mover archivos de unstaged a tracked. Esta es una ocasión especial, los archivos han sido guardados o actualizados en el repositorio. Git nos pedirá que dejemos un mensaje para recordar los cambios que hicimos y podemos usar el argumento m para escribirlo (git commit -m "mensaje").
-
-Git rm
-Este comando necesita alguno de los siguientes argumentos para poder ejecutarse correctamente:
-
-git rm --cached: mueve los archivos que le indiquemos al estado untracked.
-git rm --force: elimina los archivos de git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
+    *-*Git status: git status nos permite ver el estado de todos nuestros archivos y carpetas.
+    *-*Git add: git add nos ayuda a mover archivos del untracked o unstaged al estado staged. Podemos usar git nombre-del-archivo-o-carpeta para añadir archivos y carpetas individuales o git add -A para mover todos los archivos de nuestro proyecto (tanto untrackeds como unstageds).
+    *-*Git reset HEAD: Nos ayuda a sacar archivos del estado staged para devolverlos a su estado anterior. Si los archivos venían de unstaged, vuelven allí. Y lo mismo se venían de untracked.
+    *-*Git commit: Nos ayuda a mover archivos de unstaged a tracked. Esta es una ocasión especial, los archivos han sido guardados o actualizados en el repositorio. Git nos pedirá que dejemos un mensaje para recordar los cambios que hicimos y podemos usar el argumento m para escribirlo (git commit -m "mensaje").
+    *-*Git rm: Este comando necesita alguno de los siguientes argumentos para poder ejecutarse correctamente:
+    *-*git rm --cached: mueve los archivos que le indiquemos al estado untracked.
+    *-*git rm --force: elimina los archivos de git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
