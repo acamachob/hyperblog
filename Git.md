@@ -90,5 +90,8 @@ _-_¿Qué es git init?: git init es el comando que activa git en nuestro proyect
 *-*_git checkout + nombre rama_ Para entrar a la rama o devolverme a la rama.
 *-*_git merge_ Este comando siempre va a ocurrir en la rama en la que está, entonces por ejemplo, si quiero que quede en master, debo arrancar el comando merge allí.
 
+**Resolver un conflicto: Dos líneas iguales**
+*-*
+
 
 
