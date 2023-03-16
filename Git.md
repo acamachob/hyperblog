@@ -122,5 +122,6 @@ _-__git merge_ Este comando siempre va a ocurrir en la rama en la que está, ent
     *-*Por las actualizaciones de github, ya no es rama master sino main. Para cambiar la palabra, se utiliza el comando _git branch -m main_, ya con esto cambia a main y ahora si se puede realizar el push.
     *-*_git push origin main_ comando para enviar al servidor de github.
     *-*_git pull origin main --allow-unrelated-histories_ Para forzar la unión de archivos entre el remoto y el servidor github.
+    *-*_NOTA_ Antes de realizar la actualización del local hacia el remoto, debo traerme los cambios del remoto hacia el local con el comando _git pull_
 
 
