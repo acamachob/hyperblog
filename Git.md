@@ -113,4 +113,13 @@ _-__git merge_ Este comando siempre va a ocurrir en la rama en la que está, ent
         *-*Revisar que el servidor de llave esté prendido para que se pueda hacer la conexión, esto se hace con el comando _eval $(ssh-agent -s)_ Al dar enter, debe salir Agent pid + un número que es distinto en cada máquina. Agent, el servidor corre; pid, identificador del proceso y número que indica que el proceso está corriendo.
         *-*Nota: Para no escribir toda la ruta de acceso en git bash, con el símbolo ~ que básicamente es una variable que tiene el nombre de mi carpeta home.
         *-*Agregar la llave privada al servidor: Con el comando _ssh-add ~/.ssh/id_rsa_. Luego me pide la contraseña y luegi al darle enter, me debe aparecer identy added o identidad añadida.
+        *-*Cada laptop, debe tener una llave. No es buena idea compartir la llave en todos los equipos que tengamos, por temas de seguridad.
+*-*Vincular el repositorio con mi github local
+    *-*Ubicarnos en la carpeta donde tenemos el proyecto.
+    *-*Decirle a github que vamos a agregar un origen remoto de nuestros archivos con el comando _git remote add origin https://github.com/acamachob/hyperblog.git.
+    *-*Al colocar _git remote_, aparece origin.
+    *-*Al colocar _git remote -v_, aparecen dos líneas que indican que podemos hacer fetch y push.
+    *-*Por las actualizaciones de github, ya no es rama master sino main. Para cambiar la palabra, se utiliza el comando _git branch -m main_, ya con esto cambia a main y ahora si se puede realizar el push.
+    *-*_git push origin main_ comando para enviar al servidor de github.
+
 
