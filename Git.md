@@ -29,6 +29,7 @@ _-_ git config --global: Configurar los usuarios.
 *-*git log + nombre del archivo: Visualizar los cambios que se han generado.
 *-*git_show + nombre del archivo: Ver los cambios que se han realizado.
 *-*Letra Q: Para salir de lo que muestra la consola en git show.
+*-*git commit -am "Mensaje": Para agregar y guardar el mensaje de una vez, sin necesidad de hacer add y luego commit.
 
 **Crear un repositorio**
 *-*Ubicarse en la carpeta principal de los archivos y escribir git init + enter.
@@ -42,14 +43,14 @@ _-_¿Qué es git init?: git init es el comando que activa git en nuestro proyect
 
 **Ciclo básico de un trabajo en Git**
 *-*Cómo funciona el staging y el repositorio: ciclo básico de trabajo en git: El flujo de trabajo básico en git es algo así:
-    *-*Modificas una serie de archivos en tu directorio de trabajo.
-    *-*Preparas los archivos, añadiéndolos a tu área de preparación (staging).
-    *-*Confirmas los cambios (commit), lo que toma los archivos tal y como están en el área de preparación y almacena esa copia instantánea de manera permanente en tu directorio de git.
+*-*Modificas una serie de archivos en tu directorio de trabajo.
+*-*Preparas los archivos, añadiéndolos a tu área de preparación (staging).
+*-*Confirmas los cambios (commit), lo que toma los archivos tal y como están en el área de preparación y almacena esa copia instantánea de manera permanente en tu directorio de git.
 
 *-*Veamos a detalle las 3 secciones principales que tiene un proyecto en git.
-    *-*Working directory: El working directory es una copia de una versión del proyecto. Estos archivos se sacan de la base de datos comprimida en el directorio de git y se colocan en el disco para que los puedas usar o modificar.
-    *-*Staging area: Es un área que almacena información acerca de lo que va a ir en tu próxima confirmación. A veces se le denomina índice (index).
-    *-*.git directory (repository): En el repository se almacenan los metadatos y la base de datos de los objetos para tu proyecto. Es la parte más importante de git (carpeta .git) y es lo que se copia cuando clonas un repositorio desde otra computadora.
+*-*Working directory: El working directory es una copia de una versión del proyecto. Estos archivos se sacan de la base de datos comprimida en el directorio de git y se colocan en el disco para que los puedas usar o modificar.
+*-*Staging area: Es un área que almacena información acerca de lo que va a ir en tu próxima confirmación. A veces se le denomina índice (index).
+_-_.git directory (repository): En el repository se almacenan los metadatos y la base de datos de los objetos para tu proyecto. Es la parte más importante de git (carpeta .git) y es lo que se copia cuando clonas un repositorio desde otra computadora.
 
 **Ciclo de vida o estados de los archivos en git**
 *-*Cuando trabajamos con git, nuestros archivos pueden vivir y moverse entre 4 diferentes estados (cuando trabajamos con repositorios remotos pueden ser más estados, pero lo estudiaremos más adelante):
@@ -71,11 +72,11 @@ _-_¿Qué es git init?: git init es el comando que activa git en nuestro proyect
 
 **AL trabajar con otras personas y actualizar el repositorio remoto**
 *-*Git clone:
-    *-*Se usa en vez de git init. 
-    *-*Trae los archivos al repositorio remoto a través de la url del repositorio. 
-    *-*Se trae una copia del master al directorio local de trabajo y crea la base de datos de los cambios históricos al repositorio local, es decir, que al clonarlo, deja los cambios en Staging.
+*-*Se usa en vez de git init.
+*-*Trae los archivos al repositorio remoto a través de la url del repositorio.
+*-*Se trae una copia del master al directorio local de trabajo y crea la base de datos de los cambios históricos al repositorio local, es decir, que al clonarlo, deja los cambios en Staging.
 *-*Seguimos haciendo git add y git init para agregar los cambios al repositorio local.
- *-*Pero cuando se quieren enviar al servidor, se realiza _git push_.
+*-*Pero cuando se quieren enviar al servidor, se realiza _git push_.
 *-*Se usa _git fetch_ para traer una actualización que alguien le hizo al repositorio y lo deja de manera local.
 *-*Para unir esta actualización que alguien subió al servidor con la mia, se utiliza _git merge_
 *-*Comando _git pull_ fusiona los conceptos de fetch y merge. De esa manera, tengo una copia actualizada de lo que pase en el repositorio.
@@ -84,16 +85,23 @@ _-_¿Qué es git init?: git init es el comando que activa git en nuestro proyect
 *-*Master es la rama principal y la que tiene toda la historia de commits.
 *-*Commit más reciente es el HEAD.
 *-*Crear una rama, básicamente es crear una copia del último commit. Estos cambios no lo va a ver la rama master, hasta que no se fusione.
-*-*_git commit -am_ Funciona para añadir y hacer los cambios de una sola vez a los archivos. Solo para archivos a los que ya se le han hecho modificaciones add .
-*-*_git log --stat_ Muestra la cantidad de cambios realizados.
-*-*_git branch_ Crea una nueva rama.
-*-*_git checkout + nombre rama_ Para entrar a la rama o devolverme a la rama.
-*-*_git merge_ Este comando siempre va a ocurrir en la rama en la que está, entonces por ejemplo, si quiero que quede en master, debo arrancar el comando merge allí.
+_-__git commit -am_ Funciona para añadir y hacer los cambios de una sola vez a los archivos. Solo para archivos a los que ya se le han hecho modificaciones add .
+_-__git log --stat_ Muestra la cantidad de cambios realizados.
+_-__git branch_ Crea una nueva rama.
+_-__git checkout + nombre rama_ Para entrar a la rama o devolverme a la rama.
+_-__git merge_ Este comando siempre va a ocurrir en la rama en la que está, entonces por ejemplo, si quiero que quede en master, debo arrancar el comando merge allí.
 
 **Resolver un conflicto: Dos líneas iguales**
 *-*Sintáxis del conflicto: Cuando aparecen signos >>>>>> o <<<<<<
 *-*El conflicto que aparece, también puede ser leído en el blog de notas que se encuentra en la carpeta donde está el archivo.
 *-*El conflicto, también se puede solucionar en VSC, dejando la opción que desee. Funciona como un control de cambios.
 
-
-
+**Llaves públicas y privadas**
+*-*Las llaves _ssh_ no son por proyecto, sino por persona.
+*-*Cambiar el correo:
+    *-*Si se desea cambiar el email que se tiene configurado en Github, primero a través de git bash, nos ubicamos en el usuario principal c/users/andeu.
+    *-*Luego le colocamos el comando _git config --global user.email + el correo que quieras cambiar entre comillas_, ej: git config --global user.email "acamachob9009@gmail.com"
+    *-*Una vez cambiado, podemos volver a ver el status de la configuración con _git config -l_ y debe aparecer el nuevo correo.
+*-*Configurar las llaves:
+    *-*Estar en el home, es decir en el usuario principal c/users/andeu.
+    *-*Estando allí colocamos _ssh-keygen -t rsa -b 4096 -C "acamachob9009@gmail.com_
