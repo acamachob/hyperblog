@@ -90,6 +90,7 @@ _-__git log --stat_ Muestra la cantidad de cambios realizados.
 _-__git branch_ Crea una nueva rama.
 _-__git checkout + nombre rama_ Para entrar a la rama o devolverme a la rama.
 _-__git merge_ Este comando siempre va a ocurrir en la rama en la que está, entonces por ejemplo, si quiero que quede en master, debo arrancar el comando merge allí.
+*-*ls -al: Para ver las carpetas públicas y privadas.
 
 **Resolver un conflicto: Dos líneas iguales**
 *-*Sintáxis del conflicto: Cuando aparecen signos >>>>>> o <<<<<<
@@ -104,4 +105,12 @@ _-__git merge_ Este comando siempre va a ocurrir en la rama en la que está, ent
     *-*Una vez cambiado, podemos volver a ver el status de la configuración con _git config -l_ y debe aparecer el nuevo correo.
 *-*Configurar las llaves:
     *-*Estar en el home, es decir en el usuario principal c/users/andeu.
-    *-*Estando allí colocamos _ssh-keygen -t rsa -b 4096 -C "acamachob9009@gmail.com_
+    *-*Estando allí colocamos _ssh-keygen -t rsa -b 4096 -C "acamachob9009@gmail.com"_
+    *-*En la parte donde nos dice donde quedará guardada, no se escribe nada.
+    *-*Si queremos, le podemos colocar una contraseña adicional, cuando nos la pida, que por seguridad sería lo mejor.
+    *-*Una vez se realiza el proceso, se genera una key fongerprint y una randomart image que confirma que la llave es de verdad.
+    *-*Una vez creada la llave, el sistema operativo (Windows-Linux se configura igual) debe saber que la llave existe para poderla utilizar en el servidor, para esto se hace lo siguiente:
+        *-*Revisar que el servidor de llave esté prendido para que se pueda hacer la conexión, esto se hace con el comando _eval $(ssh-agent -s)_ Al dar enter, debe salir Agent pid + un número que es distinto en cada máquina. Agent, el servidor corre; pid, identificador del proceso y número que indica que el proceso está corriendo.
+        *-*Nota: Para no escribir toda la ruta de acceso en git bash, con el símbolo ~ que básicamente es una variable que tiene el nombre de mi carpeta home.
+        *-*Agregar la llave privada al servidor: Con el comando _ssh-add ~/.ssh/id_rsa_. Luego me pide la contraseña y luegi al darle enter, me debe aparecer identy added o identidad añadida.
+
