@@ -132,6 +132,13 @@ _-_.git directory (repository): En el repository se almacenan los metadatos y la
 *-*Tags para colocarlos delante de cada modificación y que sea más fácil acceder a ella. Se recomienda colocar v0.1 y así sucesivamente para indicar cada cambio. Ejemplo: git tag -a v0.1 -m "resultado de las primeras clases del curso" + el número largo que aparece en cada commit. git tag -a v0.1 -m "resultado de las primeras clases del curso" 3de9f50
 *-*_git tag_ Muestra la lista de todos los tags.
 *-*_git show-ref --tags_ Muestra a que número largo esta asociado y la versión.
+*-*_git push origin --tag_ Para subir al servidor mi tag.
+*-*_git tag -d dormido_ Para eliminar el tag localmente.
+*-*Para eliminar el tag también del repositorio, con el comando _git push origin :refs/tags/dormido_ Esta es la referencia interna que borra el tag del servidor github.
+
+**Enviar diferentes ramas al servidor**
+*-*
+
 
 
 
