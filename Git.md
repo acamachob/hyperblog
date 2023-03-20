@@ -137,7 +137,7 @@ _-_.git directory (repository): En el repository se almacenan los metadatos y la
 *-*Para eliminar el tag también del repositorio, con el comando _git push origin :refs/tags/dormido_ Esta es la referencia interna que borra el tag del servidor github.
 
 **Enviar diferentes ramas al servidor**
-*-*
+*-*Cambiar de rama con _git checkout cabecera_.
 
 
 
