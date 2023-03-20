@@ -85,12 +85,14 @@ _-_.git directory (repository): En el repository se almacenan los metadatos y la
 *-*Master es la rama principal y la que tiene toda la historia de commits.
 *-*Commit más reciente es el HEAD.
 *-*Crear una rama, básicamente es crear una copia del último commit. Estos cambios no lo va a ver la rama master, hasta que no se fusione.
-_-__git commit -am_ Funciona para añadir y hacer los cambios de una sola vez a los archivos. Solo para archivos a los que ya se le han hecho modificaciones add .
-_-__git log --stat_ Muestra la cantidad de cambios realizados.
-_-__git branch_ Crea una nueva rama.
-_-__git checkout + nombre rama_ Para entrar a la rama o devolverme a la rama.
-_-__git merge_ Este comando siempre va a ocurrir en la rama en la que está, entonces por ejemplo, si quiero que quede en master, debo arrancar el comando merge allí.
+*-*_git commit -am_ Funciona para añadir y hacer los cambios de una sola vez a los archivos. Solo para archivos a los que ya se le han hecho modificaciones add .
+*-*_git log --stat_ Muestra la cantidad de cambios realizados.
+*-*_git branch_ Crea una nueva rama.
+*-*_git checkout + nombre rama_ Para entrar a la rama o devolverme a la rama.
+*-*_git merge_ Este comando siempre va a ocurrir en la rama en la que está, entonces por ejemplo, si quiero que quede en master, debo arrancar el comando merge allí.
 *-*ls -al: Para ver las carpetas públicas y privadas.
+*-*_git log --all_ Muestra todo lo que se ha hecho en las ramas que haya tenido el proyecto.
+*-*_git log --all --graph_ Muestra todo lo que se ha hecho en las ramas que haya tenido el proyecto.
 
 **Resolver un conflicto: Dos líneas iguales**
 *-*Sintáxis del conflicto: Cuando aparecen signos >>>>>> o <<<<<<
@@ -123,5 +125,17 @@ _-__git merge_ Este comando siempre va a ocurrir en la rama en la que está, ent
     *-*_git push origin main_ comando para enviar al servidor de github.
     *-*_git pull origin main --allow-unrelated-histories_ Para forzar la unión de archivos entre el remoto y el servidor github.
     *-*_NOTA_ Antes de realizar la actualización del local hacia el remoto, debo traerme los cambios del remoto hacia el local con el comando _git pull_
+
+**Etiquetas**
+*-*_git log --all --graph --decorate --oneline_ Comando para ver más a detalle las modificaciones que se han hecho en el proyecto. Para acortar el comando, se puede utilizar un alias, que consiste en colocar el nombre que le queremos colocar , seguido de un = y el comando entre comillas "git log --all --graph --decorate --oneline". Ejemplo: arbolito = "git log --all --graph --decorate --oneline". Al colocarlo en consola, el ya entiende que con colocar arbolito, ya funciona todo el comando.
+*-*Todo programador puede crear sus propios alias.
+*-*Tags para colocarlos delante de cada modificación y que sea más fácil acceder a ella. Se recomienda colocar v0.1 y así sucesivamente para indicar cada cambio. Ejemplo: git tag -a v0.1 -m "resultado de las primeras clases del curso" + el número largo que aparece en cada commit. git tag -a v0.1 -m "resultado de las primeras clases del curso" 3de9f50
+*-*_git tag_ Muestra la lista de todos los tags.
+*-*_git show-ref --tags_ Muestra a que número largo esta asociado y la versión.
+
+
+
+
+
 
 
