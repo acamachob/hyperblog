@@ -138,6 +138,8 @@ _-_.git directory (repository): En el repository se almacenan los metadatos y la
 
 **Enviar diferentes ramas al servidor**
 *-*Cambiar de rama con _git checkout cabecera_.
+*-*Para ver información completa de las ramas: _git show-branch_ ó _git show-branch --all_
+*-*Comando _gitk_ me muestra en un programa aparte, la información de la evolución del proyecto. Es práctico, pero es recomendable aprender desde la consola.
 
 
 
