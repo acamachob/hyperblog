@@ -222,15 +222,28 @@ _Nota_: Use el git log -S “palabra” no trae el conteo, trae las palabras par
 
 **Comandos y recursos colaborativos en Git y GitHub**
 A continuación veremos una lista de comandos colaborativos para facilitar el trabajo remoto en GitHub:
+    *-*git shortlog: Muestra cuantos commit han hecho cada miembro del equipo.
+    *-*git shortlog -sn: Muestra los nombres de los colaboradores del equipo.
+    *-*git shortlog -sn --all: Muestra cuantos commit han hecho cada miembro del equipo, hasta los que han sido eliminados.
+    *-*git shortlog -sn --all --no-merges: Muestra cuantos commit ha hecho cada miembro, quitando los eliminados, sin los merges.
+    *-*git blame + nombre del archivo: Muestra quien hizo cada cosa línea por línea.
+    *-*git blame -c + nombre del archivo: Muestra quien hizo cada cosa línea por línea, pero de manera identada o formateada para visualizar mejor.
+    *-*git + nombre del comando --help: Muestra como funciona el comando; es el manual de como funciona el comando.
+    *-*git blame + nombre del archivo + -Linea inicial,linea final: Muestra quien hizo cada cosa línea por línea, indicándole desde qué línea ver. Ejemplo -L35,50.
+    *-*git branch -r: Se muestran todas las ramas remotas, las que están en el servidor.
+    *-*git branch -a: Se muestran todas las ramas, tanto locales como remotas.
 
-git shortlog -sn: muestra cuantos commit han hecho cada miembro del equipo.
-git shortlog -sn --all: muestra cuantos commit han hecho cada miembro del equipo, hasta los que han sido eliminados.
-git shortlog -sn --all --no-merge: muestra cuantos commit ha hecho cada miembro, quitando los eliminados sin los merges.
-git blame ARCHIVO: muestra quien hizo cada cosa línea por línea.
-git COMANDO --help:muestra como funciona el comando.
-git blame ARCHIVO -Llinea_inicial,linea_final: muestra quien hizo cada cosa línea por línea, indicándole desde qué línea ver. Ejemplo -L35,50.
-git branch -r: se muestran todas las ramas remotas.
-git branch -a: se muestran todas las ramas, tanto locales como remotas.
+*-*Pulse en el servidor github: Muestra estadísticas de lo que ha sido el proyecto.
+*-*Contributors: Lista de contribuidores del proyecto.
+*-*Community: Lista de cosas que se tienen que hacer, son buenas prácticas-
+*-*Traffic: Tráfico que ha tenido el proyecto en este momento.
+*-*commits: Historia de commits.
+*-*Code Frecuency: Cuanto código se añade o se borra por semana.
+*-*Dependency Graph: Que otras librerías se están usando o a que repositorio pertenecen.
+*-*Alerts: Es de forma privada y son alertas a las que hay que ponerle atención.
+*-*Network: Historia de quién está manejando el proyecto. Es una gráfica que muestra los merge que han hecho los colaboradores.
+*-*Forks: Historial de las personas que han hecho forks. 
+
 
 
 
