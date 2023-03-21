@@ -188,9 +188,7 @@ _Cómo se realiza un pull request_
 *-*_git clean -f_ Borra los archivos seleccionados con el comando anterior.
 *-*Al ejecutar estos comandos, no borra los del tipo que se encuentren en el .gitignore
 *-*El parametro -d ayuda con el borrado de carpetas untracked. Por ejemplo: git clean -df hubiera borrado la carpeta “css - copia” que no se podía borrar con el comando -f
-<<<<<<< HEAD
 *-*
-=======
 *-*_git log --oneline_ Ver el árbol de commits de manera más corta.
 
 **Git cherry-pick**
@@ -200,7 +198,6 @@ _Cómo se realiza un pull request_
     *-*Ubicarse en la rama donde quiero pegar el commit.
     *-*Desde esta rama colocar git cherry-pick + el número o hash del commit f91b097: _git cherry-pick f91b097_
 
->>>>>>> readme-mejorado
 
 
 
