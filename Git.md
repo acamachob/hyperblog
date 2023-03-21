@@ -197,6 +197,7 @@ _Cómo se realiza un pull request_
     *-*Copiar el número que aparece en el commit que se desea copiar: f91b097.
     *-*Ubicarse en la rama donde quiero pegar el commit.
     *-*Desde esta rama colocar git cherry-pick + el número o hash del commit f91b097: _git cherry-pick f91b097_
+*-*Pero este comando es una mala práctica. Es mejor hacer un merge.
 
 
 
