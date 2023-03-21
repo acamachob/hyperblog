@@ -176,7 +176,8 @@ _Cómo se realiza un pull request_
 *-*Arreglo de bugs. Tomar una rama entera y pegarla de nuevo a la rama maestra.
 *-*Esto solo se haría de manera LOCAL, es mala práctica subirla al servidor.
 *-*_git rebase_ para que una rama vuelva a unirse a la rama main. Desde la rama, ejemplo experimento, digito el comando _git rebase main_
-
+*-*Primero se hace el rebase a la rama que se va a desaparecer.
+*-*Luego rebase a la rama principal.
 
 
 
