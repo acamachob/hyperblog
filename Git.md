@@ -204,7 +204,21 @@ _Cómo se realiza un pull request_
 *-*_git reflog_ Muestra el estado de los cambios, errores o daños que se han realizado con su respectivo hash.
 *-*_git remove_ Revierte los cambios. De manera suave con --soft y de manera completa con --hard + el hash. Ej: _git remove --hard f91b097_ Deja el proyecto con el estado que quiero.
 
+**Git amend**
+*-*Los cambios que haga, me los va a pegar al commit anterior.
 
+**Git con grep y log**
+_Grep_ Para buscar dentro de mis archivos-
+*-*_git grep + palabra que quiero buscar_ Cuantas veces usé determinada palabra: _git grep color_
+*-*_git grep -n color_ En que líneas use la palabra color
+*-*_git grep -c + palabra_ Cuantas veces use determinada palabra: _git grep -c la_
+*-*_git grep -c “<p>”_ Cuantas veces use la etiqueta <p>
+*-*_git log -S “cabecera”_ Cuantas veces use la palabra cabecera en todos los commits.
+
+_Log_ Para buscar en la historia de los commits.
+*-*_git log -S + palabra que quiero buscar_
+
+_Nota_: Use el git log -S “palabra” no trae el conteo, trae las palabras parecidas a las que estamos buscando. Es mejor que uses git log --all --oneline | grep “cabecera”, te trae los commits en donde se encuentra la palabra.
 
 
 
