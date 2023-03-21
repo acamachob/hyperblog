@@ -190,6 +190,9 @@ _Cómo se realiza un pull request_
 *-*El parametro -d ayuda con el borrado de carpetas untracked. Por ejemplo: git clean -df hubiera borrado la carpeta “css - copia” que no se podía borrar con el comando -f
 *-*_git log --oneline_ Ver el árbol de commits de manera más corta.
 
+**Git cherry-pick**
+*-*El comando trae solo el commit que se desea, no necesariamente tiene que hacerse merge.
+
 
 
 
