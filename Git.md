@@ -179,6 +179,9 @@ _Cómo se realiza un pull request_
 *-*Primero se hace el rebase a la rama que se va a desaparecer.
 *-*Luego rebase a la rama principal.
 
+**Git stash**
+*-*Volver al estado anterior.
+
 
 
 
