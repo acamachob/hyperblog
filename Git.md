@@ -157,6 +157,14 @@ _Cómo se realiza un pull request_
 *-*Se hace merge a master desde GitHub.
 *-*Importante: Cuando se modifica una rama, también se modifica el pull request.
 
+**Fork**
+*-*Cuando una persona quiere colaborar con el proyecto, pero no está aceptado como colaborador, se usa el _fork_
+*-*Fork, una copia del estado actual del proyecto y clonarlo como un proyecto mio. Solo aplica para proyectos públicos.
+*-*Si el dueño del proyecto actualiza el proyecto, tengo que actualizar mi fork con esos cambios de proyecto.
+*-*_git remote add upstream https://github.com/armandovv/Dasansor-Frontend.git_ crea otra fuente nueva para traer datos a la rama main. Para mantener las ramas del usuario principal con el secundario, quien le hará modificaciones al proyecto, pero no directamente al master.
+
+
+
 
 
 
