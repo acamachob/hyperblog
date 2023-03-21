@@ -180,7 +180,8 @@ _Cómo se realiza un pull request_
 *-*Luego rebase a la rama principal.
 
 **Git stash**
-*-*Volver al estado anterior.
+*-*_git stash_ Volver al estado anterior. Es como un deshacer un cambio.
+*-*Si ejecutamos _git stash list_ me aparece un WIP (work in progress) que es el trabajo que estaba digitando antes que le diera deshacer.
 
 
 
