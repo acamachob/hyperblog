@@ -188,7 +188,7 @@ _Cómo se realiza un pull request_
 *-*_git clean -f_ Borra los archivos seleccionados con el comando anterior.
 *-*Al ejecutar estos comandos, no borra los del tipo que se encuentren en el .gitignore
 *-*El parametro -d ayuda con el borrado de carpetas untracked. Por ejemplo: git clean -df hubiera borrado la carpeta “css - copia” que no se podía borrar con el comando -f
-
+*-*
 
 
 
