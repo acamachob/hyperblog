@@ -172,6 +172,11 @@ _Cómo se realiza un pull request_
 *-*Al digitar un archivo con vim en la consola, para salir utilizo ESC + :x
 *-*Al colocar mi nombre como página web, debo colocar github.io para que me muestre la página, como principal. https://acamachob.github.io/
 
+**Git Rebase**
+*-*Arreglo de bugs. Tomar una rama entera y pegarla de nuevo a la rama maestra.
+*-*Esto solo se haría de manera LOCAL, es mala práctica subirla al servidor.
+*-*
+
 
 
 
