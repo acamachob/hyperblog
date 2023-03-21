@@ -183,6 +183,8 @@ _Cómo se realiza un pull request_
 *-*_git stash_ Volver al estado anterior. Es como un deshacer un cambio.
 *-*Si ejecutamos _git stash list_ me aparece un WIP (work in progress) que es el trabajo que estaba digitando antes que le diera deshacer.
 *-*_git stash branch english-version_ Crear una rama para guardar los cambios temporales. 
+*-*_git stash drop_ Borrar definitivamente la modificación que se tenía pensada o que no se quería hacer, para que no quede en memoria.
+
 
 
 
