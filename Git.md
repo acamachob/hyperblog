@@ -163,6 +163,10 @@ _Cómo se realiza un pull request_
 *-*Si el dueño del proyecto actualiza el proyecto, tengo que actualizar mi fork con esos cambios de proyecto.
 *-*_git remote add upstream https://github.com/armandovv/Dasansor-Frontend.git_ crea otra fuente nueva para traer datos a la rama main. Para mantener las ramas del usuario principal con el secundario, quien le hará modificaciones al proyecto, pero no directamente al master.
 
+**Git Ignore**
+*-*No todos los archivos se deben subir al repositorio.
+*-*Se crea un archivo dentro del proyecto, en la raíz del proyecto local, que se llame .gitignore, que es una lista donde se van a relacionar los archivos que no se van a subir o los que se van a ignorar.
+
 
 
 
