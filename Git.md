@@ -199,7 +199,10 @@ _Cómo se realiza un pull request_
     *-*Desde esta rama colocar git cherry-pick + el número o hash del commit f91b097: _git cherry-pick f91b097_
 *-*Pero este comando es una mala práctica. Es mejor hacer un merge.
 
-
+**Git reflog / Git reset**
+*-*Cuándo sucede algo inesperado, podemos reestablecer nuestro proyecto con estos comandos, aunque no es buena práctica.
+*-*_git reflog_ Muestra el estado de los cambios, errores o daños que se han realizado con su respectivo hash.
+*-*_git remove_ Revierte los cambios. De manera suave con --soft y de manera completa con --hard + el hash. Ej: _git remove --hard f91b097_ Deja el proyecto con el estado que quiero.
 
 
 
