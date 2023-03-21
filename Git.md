@@ -167,6 +167,11 @@ _Cómo se realiza un pull request_
 *-*No todos los archivos se deben subir al repositorio.
 *-*Se crea un archivo dentro del proyecto, en la raíz del proyecto local, que se llame .gitignore, que es una lista donde se van a relacionar los archivos que no se van a subir o los que se van a ignorar.
 
+**GitHub Pages Hosting gratis**
+*-*Sitio para alojar los proyectos.
+*-*Al digitar un archivo con vim en la consola, para salir utilizo ESC + :x
+*-*Al colocar mi nombre como página web, debo colocar github.io para que me muestre la página, como principal. https://acamachob.github.io/
+
 
 
 
