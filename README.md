@@ -19,4 +19,10 @@ Un blog para el curso de Git y GitHub de Platzi
 -Creado por el increible Platzi Team
 
 
+-Creado por el increible Platzi Team
+
+-Incluye ejemplos en los 3 sistemas operativos
+
+-Disponible para todas las edades
+
 Y como un amable recordatorio: "Este readme no es un chiste" Diseñado para el ejemplo. Si llegas acá NO TE LO TOMES EN SERIO YA QUE ES UN EJERCICIO PRÁCTICO DE GIT Y GITHUB y mejor hazte el curso en Platzi
